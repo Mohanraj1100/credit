@@ -1,6 +1,6 @@
 package assignment.credit;
 
-public class Creditcard implements Cloneable{
+public class Creditcard implements cloneable{
     String cardholder;
     Long cardnumber;
     String expirydate;
