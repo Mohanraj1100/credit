@@ -16,8 +16,15 @@ public class Creditcard implements cloneable{
     }
 
     void display() {
-        System.out.println("Cardholder nsme id" + cardholder + "and card Number id " + cardnumber + "And expiry date"
-                + expirydate);
+        if( cardnumber == validcardno)
+        {
+                System.out.println("Cardholder nsme id" + cardholder + "and card Number id " + cardnumber + "And expiry date"
+                        + expirydate);
+        }
+        else
+        {
+            System.out.println("It is invalid");
+        }
     }
 
     Creditcard co() {
