@@ -16,8 +16,8 @@ public class Credit
 
         Creditcard obj1 = new Creditcard(cardholder, cardnumber, expirydate);
         Creditcard obj2 = obj1.co();
-        obj2.display();
         System.out.println(obj2.equals(validcardno));
+	obj2.display();
     }
 
 }
