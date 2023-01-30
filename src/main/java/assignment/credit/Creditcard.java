@@ -1,9 +1,11 @@
 package assignment.credit;
+import java.util.logging.*;
 
 public class Creditcard implements cloneable{
     String cardholder;
     Long cardnumber;
     String expirydate;
+    Logger log=Logger.getLogger("hi");
 
     Creditcard(String cardholder, Long cardnumber, String expirydate) {
         this.cardholder = cardholder;
@@ -18,12 +20,12 @@ public class Creditcard implements cloneable{
     void display() {
         if( cardnumber == validcardno)
         {
-                System.out.println("Cardholder nsme id" + cardholder + "and card Number id " + cardnumber + "And expiry date"
+                log.info("Cardholder nsme id" + cardholder + "and card Number id " + cardnumber + "And expiry date"
                         + expirydate);
         }
         else
         {
-            System.out.println("It is invalid");
+            log.info("It is invalid");
         }
     }
 
