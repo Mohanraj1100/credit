@@ -1,22 +1,24 @@
 package assignment.credit;
 import java.util.*;
+import java.util.logging.*;
 public class Credit 
 {
 	public static void main(String[] args) {
         Scanner si = new Scanner(System.in);
+	Logger log=Logger.getLogger("hi");
 
-        System.out.println("Enter cardholder name");
+        log.info("Enter cardholder name");
         String cardholder = si.nextLine();
-        System.out.println("Enter cardnumber");
+        log.info("Enter cardnumber");
         Long cardnumber = si.nextLong();
-        System.out.println("Enter card's expiry daate");
+        log.info("Enter card's expiry daate");
         String expirydate = si.next();
 
         Long validcardno = 987654321l;
 
         Creditcard obj1 = new Creditcard(cardholder, cardnumber, expirydate);
         Creditcard obj2 = obj1.co();
-        System.out.println(obj2.equals(validcardno));
+        log.info(obj2.equals(validcardno));
 	obj2.display();
     }
 
