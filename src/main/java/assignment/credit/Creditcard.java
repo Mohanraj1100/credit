@@ -20,8 +20,7 @@ public class Creditcard implements cloneable{
     void display() {
         if( cardnumber == validcardno)
         {
-                log.fine("Cardholder nsme id" + cardholder + "and card Number id " + cardnumber + "And expiry date"
-                        + expirydate);
+                log.fine("Cardholder nsme id {} and card Number id {} And expiry date {}",cardholder,cardnumber,expirydate);
         }
         else
         {
